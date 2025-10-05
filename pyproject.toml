@@ -1,0 +1,28 @@
+[project]
+name = "base-64-bench-data"
+version = "0.1.0"
+description = "Base64 encoding/decoding benchmark data for Base64Bench"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.10"
+dependencies = [
+    "numpy",
+    "matplotlib",
+    "seaborn",
+    "scikit-learn",
+    "pandas",
+    "inspect_ai",
+    "python-levenshtein",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "pytest-cov",
+]
+
+[tool.uv]
+dev-dependencies = [
+    "pytest>=6.0",
+    "pytest-cov>=2.0",
+]
